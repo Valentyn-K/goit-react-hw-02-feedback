@@ -1,0 +1,10 @@
+.sectionWraper {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: teal;
+}
