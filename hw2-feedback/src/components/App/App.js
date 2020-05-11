@@ -4,7 +4,7 @@ import feedBackButtons from "../../utils/feedBackButtons";
 import Section from "../Section/Section";
 import FeedBackOptions from "../FeedbackOptions/FeedbackOptions";
 import Statistics from "../Statistics/Statistics";
-import styles from './App.module.css'
+import styles from "./App.module.css";
 
 const options = Object.values(feedBackButtons);
 
@@ -23,8 +23,7 @@ export default class App extends Component {
     bad: this.props.initialValue,
   };
 
-  incrementFeedBacks = (e) => {
-    const { name } = e.target;
+  incrementFeedBacks = (name) => {
     this.setState((prevState) => ({ [name]: prevState[name] + 1 }));
   };
 
